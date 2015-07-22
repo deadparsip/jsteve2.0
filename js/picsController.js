@@ -25,6 +25,9 @@
         $scope.changeActivePic = function (index) {
             $scope.activePic = index;
         };
+
+        
+
     }]);
     
 

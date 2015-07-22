@@ -87,7 +87,9 @@ nav li {
 	color: rgba(204, 204, 204,0.8);
 	margin: 2% 0;
 }
-
+article nav li {
+    width: 4%;
+}
 nav li.selected{
 	color:#fff;
 }
@@ -123,7 +125,10 @@ article:nth-child(2) {
 	text-align:center
 }    
 .boxes img, .stories .boxes p, .bio .boxes p {
-    width:96%;    
+    width:96%;
+    /*maybz*/
+    width: 108%;
+    margin-left: -4%;
 }
 .boxes img.main {
 	width: 107%;

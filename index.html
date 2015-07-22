@@ -20,25 +20,23 @@
 <body class="home" ng-app="whelk" ng-controller="MainController">
 <div class="fb-like" data-href="http://www.thevaguewhelk.com/" data-width="300" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
 
-<h1><a href="http://jsteve.uk/#home">sdsdsd</a></h1>
+<h1><a href="http://jsteve.uk/#home">biscuit</a></h1>
 
 <div id="wrapper">
-	
-	<div id="main" class="cf home">	
-		
-		<nav>
-			<ul>
-				<li class="poetry" ng-repeat="nav in navs" ng-click="changeActiveSection($index,event)">{{nav.link}}</li>				
-			</ul>
-		</nav>		
+	<div id="main" class="cf home">
+        <nav>
+            <ul>
+                <li ng-repeat="nav in navs" ng-click="changeActiveSection($index,event)">{{nav.link}}</li>
+            </ul>
+        </nav>		
 
         <article ng-repeat="section in sections" class="home boxes animated fadeInUpBig" ng-if="activeSection == $index">
             <section ng-if="section.showContent" ng-include="section.templateUrl"></section>
             <section ng-if="!section.showContent">
-				<h2>{{section.name}}</h2>			                
+		        <h2>{{section.name}}</h2>			                
                 <img ng-src="{{section.cover}}" class="img-responsive main" ng-alt="{{section.alt}}">
                 <section ng-bind-html="section.desc"></section>
-				<a ng-click="showContent($index,event)">show</a>
+		        <a ng-click="showContent($index,event)">show</a>
             </section>
         </article>
 		
@@ -47,12 +45,14 @@
 
 
 <div id="fb-root"></div>
-<script src="js/angular.js"></script>
+<script src="js/angular.min.js"></script>
 <script src="js/angular-sanitize.min.js"></script>
 <script src="js/Controller.js"></script>    
 <script src="js/poetryController.js"></script>    
 <script src="js/picsController.js"></script>    
 
+ <!--for live concat and minify -->   
+ <!--<script src="build/script.min.js"></script>-->
 </body>
 </html>
 
