@@ -8,13 +8,17 @@
         $scope.poems = [
             {
                 title: 'Wet Sock',
-                content : 'my cruel fate<br>'+
-                'o capricious cosmos<br>' +
+                content : 'my cruel fate<br>' +
+                'bestowed by a capricious cosmos<br>' +
                 'delivered impassive and cold<br>' +
-                'like last night&apos;s beans,<br>' +
-                'What twisted evil this? <br>' +
-                'befallen my not yet cloven hoof <br>' +
-                'deliver me from wet sock before I strike out with my existence!'
+                '(like angel delight)' +
+				
+                'What twisted circumstance? <br>' +
+				'What limit man&apos;s endurance?<br>'+
+                'What sorry state hath <br>' +
+				'befallen my not yet cloven hoof<br>' +
+                'deliver me from wet sock!<br>' +
+				'I did not sign up for this'
             },
 			{
                 title: 'My face',
@@ -31,10 +35,7 @@
             },
             {
                 title: 'A chimeric music man',
-                content: '<em>Wouldst thou disc' +
-                    '' +
-                    '' +
-                    'redit me with your fibs?</em>    ' +
+                content: '<em>Wouldst thou discredit me with your fibs?</em>' +
                     'A man with features' +
                     'taken from instrument (crept onto a face)<br>' +
                     'I little understand<br>' +
@@ -291,7 +292,105 @@
                     'I recount with a shudder<br>'+
                     'I defecated my buttock<br>' +
                     'I passed it asunder'
-            }
+            },
+			{
+				title: 'A Cautionary Christmas Tale',
+				content:'Provocatively positioned<br>'+
+				'Precariously perched<br>'+
+				'Armpit Boris<br>'+
+				'larily lurched<br>'+
+				'falteringly flailing<br>'+
+				'and dangerously decorating<br>'+
+				'resting atop ladder<br>'+
+				'mistakenly masturbating<br><br>	'+
+				'Crushing his christmas<br>'+
+				'with daredevil decisions<br>'+
+				'Armpit Boris<br>'+
+				'lacking in luck<br>'+
+				'fell to his death <br>'+
+				'destroying a duck<br>'+
+				'<em>and slowly died on top of the new carpet</em><br><br>'+
+				'<em>epilogue</em><br>'+
+				'OH WOE, woe is me!<br>'+
+				'he certainly cried <br>'+
+				'before remembering his deathly condition<br>'+
+				'at which point he held his counsel<br>'+
+				'and lay there <br>'+
+				'until february the 3rd whereupon his occasional pet cat Graham found him and licked his nose unsatisfactorily.<br><br>'
+			},
+			{
+				title:'Nutcrackerz',
+				content: 'And Nutella did shout and curse out loud<br>'+
+					'What would you have me do now, o Sea<br>'+
+					'Latvian sea that could not be<br>'+
+					'The sea remained silent<br>'+
+					'For it could not see<br>'+
+					'A wise course of action for the young maniac<br><br>'+
+					'And what of you, young crab of red<br>'+
+					'crab that scuttles, over the shallow sea bed<br>'+
+					'The crab that existed only in the mind and head<br>'+
+					'of a young and deranged creature<br>'+
+					'Who&apos; sanity had long since fled<br>'+
+					'who was lost in a whirling tundra of screaming thoughts and NGmailings<br>'+
+					'That the crab would hold its counsel again confirmed<br>'+
+					'There was no answer to her maniacal bewailings<br><br>'+
+					'Would you have me kill again, O latvian frog?<br>'+
+					'Frog found squished<br>'+
+					'in the petering bog<br>'+
+					'Frog with capacity for inciting such interrogation<br>'+
+					'An imaginary creature that hails from a frogless nation<br>'+
+					'The frog&apos;s reticence only confirmed<br>'+
+					'The killing again plan<br>'+
+					'was most coldly affirmed<br>'	
+			},
+			{
+				title: 'Intolerant of irrelevance',
+				content: 'Lying down, unregarded<br>(like a crumb)<br>Salient Michael, a man fully broken<br>no longer relevant to any, but<br>'+
+					'oaf, simpleton, cretin or newsagent<br>rather than change his name<br> slowly died on top of the transponder<br><br>'
+			},
+			{
+				title:'Prodigious underpant',
+				content:'Prodigious underpant<br>in a fit of conscience<br>decided to wrap buttocks<br>in a less sinister manner<br>"I have sinned" he'+
+				'cried<br>his muffled confession<br>Clarified naught....<br>'
+			},
+			{
+				title: 'A seal named Gerrard',
+				content:'(The back parts of a curly bracket)'+
+					'A seal named Gerrard<br>with his fins upon the floor<br>swam accross my slumber<br>and thought he saw much more<br>'+
+					'sleeping in human form<br>he misconstrued my needs<br>swapping my spine for a curly bracket<br>despite my plaintive pleas<br>'+
+					'I live not on a keyboard!<br>I counselled him most wisely<br>But all I said was sadly in vain<br>as he told me nicely<br>'+
+					'you resemble in my eyes<br>some sort of punctuation<br>you&apos;re clearly mad, you&apos;re no more human <br>than I am oceanic'+ 'crustacean<br>I killed him and set fire to the body before realising that I was probably going to be stuck this way for life.'
+			},
+			{
+				title:'Harmonic Spatula&apos;s tidy thoughts',
+				content: 'Left behind<br><em>like a comb</em>'
+			},
+			{
+				title:'Furious milk',
+				content:'Furious Milk<br>happened by chance<br>to mend his shoe<br>after committing his aunts<br><em>who had both become irretrievably '+
+				'and fundamentally insane</em><br><br><em>earlier..</em><br><br>Furious Milk<br>broke his blisters<br>tripping upon bacon<br>'+
+				'after killing his sisters<br><em>who had both become inexplicably and copiously herbivore</em><br><br>Furious milk<br>'+
+				'smashed his sandals<br>cracked upon bones<br>	running on vandals<br><em>who had both purposefully and malevolently desecrated his brothers'+'graves</em><br><Br>Furious milk<br>wet his socks<br>uncontrollably laughing<br>dancing in smocks<br><em>which had both belonged profusely'+
+				'and incapably to his mother</em><br><Br>Furious milk<br>ended her life<br>realisation dawning<br>insanity was rife<br>'+
+				'<em>in a family all now inescapably and vigorously dead</em><br><br>'
+			},
+			{
+				title:'Intransiently transient',
+				content:'fermenting gently<br>on definite parts of his brain<br>Nascent thoughts brewing<br>not entirely made of sane<br>'+
+				'<em>struck wonderously affirmed</em><br><br>"I will not kill again!"<br>cried the dangerous caterpillar<br>Then he killed the moth four'+
+				'times and set fire to the body again<br>which just goes to show, really.'
+			},
+			{
+				title: 'Simon',
+				content:'Nightly prowlings<br>a steamy tread<br>those plastic bags<br>carry the dead<br>hackney hookers<br>'+
+					'paid a price most dear<br><em>like errant hagglers in a foreign currency of despair</em><br><br>'+
+					'this tear streaked chimera<br>with her satchel of destruction<br>corduroyed product manager <br>lacks compunction<br>'+
+					'cries for help<br>a spirit so absent<br><em>lamentations fall on ears made of cloth</em><br><em>like a nuclear dog you are' + ' unexpected and foul</em><br><br>'
+			},
+			{
+				title:'',
+				content: ''
+			}
         ]
 
         $scope.changeActivePoem = function (index) {

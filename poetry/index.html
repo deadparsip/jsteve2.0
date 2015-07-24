@@ -8,7 +8,7 @@
         <a id="next" href="/" class="links next opac" style="display: inline;" ng-click="forwardPoem()"></a> 
 	</nav>
 
-    <article ng-repeat="poem in poems" class="boxes animated fadeIn" ng-if="activePoem == $index">
+    <article ng-repeat="poem in poems" class="boxes animated lightSpeedIn" ng-if="activePoem == $index">
         <h2>{{poem.title}}</h2>
         <div ng-bind-html="poem.content"></div>
         <br/><br/><em>fin</em>

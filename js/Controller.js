@@ -2,7 +2,10 @@
 (function() {
 
     var vagueWhelk = {};
-    var app = angular.module("whelk", ["ngSanitize"]);
+    var app = angular.module("whelk", [
+	"ngSanitize",
+	"ngAnimate"
+	]);
 
     angular.module('whelk', [
         'whelk.main',
@@ -20,6 +23,7 @@
         $scope.activePoem = 0;
         $scope.activePic = 0;
         $scope.activeFilm = 0;
+		$scope.activespaceSloth =0;
 
         $scope.changeActiveSection = function (index) {
             $scope.activeSection = index;
@@ -60,7 +64,7 @@
             desc: "<p>Who am I, you sweet sweet sack of lovely? Caster of Hexes, cuckolder of mind-kettles, vin de table. I am none of these things.</p>" +
                 "<p>Poet, Dovahkiin, mage, film director, astral projectionist, part-time badger farmer, moth-worrier and table." +
             "These are just some of the things that people can be. Some of them are also a Jon Stevens, which is what I usually am too.</p>" +
-            "<p>-- this is where my mind shouts fall out -- </p><br><p>FEEL FREE TO HAVE A LOOK ABOUT you coagulated glove-toaster. Sometimes things " +
+            "<p><center>-- this is where my mind shouts fall out -- </center></p><p>FEEL FREE TO HAVE A LOOK ABOUT you coagulated glove-toaster. Sometimes things " +
             "here aren't that rubbish. </p><p>you can SWIPE the screen like you was goin nutz on the Tinder. Or click the navigations. OR " +
             " go away. Or wotevs. <h3>New Things</h3><p>NEW THINGS ---> </p><br><p><a class='link' href='/films/index.html#solitude'>Solitudes - a 5 hour one-man stageplay </a></p>" +
             "<p><a class='link' href='junk/buzzfeedheadlinegenerator.html'>Buzzfeeds Generator Thing</a></p><p><a class='link' href='pics/#bean'>Bean of Ambivalence (Tate)" +
@@ -107,7 +111,7 @@
             alt: 'The Space Sloth speeketh!',
             desc: "<p>Wisdimz from the Great Space Sloth! He will blow your mind like a sex-worker therapist with a stun-enema. That is a mind properly blown. His words will almost certainly make your wig go back son!</p>" +
                   "<p class='go'>Go and heed the Space Sloth's words you radish patch and herb garden bitch --></p><br>",
-            templateUrl: 'spacesloth/index.html',
+            templateUrl: 'space-sloth/index.html',
             showContent: false
         },
         {

@@ -10,9 +10,8 @@
 
     <article ng-repeat="spaceSloth in spaceSloths" class="boxes animated fadeIn" ng-if="activespaceSloth == $index">
         <h2>{{spaceSloth.title}}</h2>
-        <div ng-bind-html="spaceSloth.content"></div>
-		<img class="img-responsive" ng-src="{{spaceSloth.src}}" alt="{{spaceSloth.title}}"/><br></br>
-		<div class="fb-share-button" data-href="http://www.thevaguewhelk.com/films/index.html" data-layout="button_count"></div>
+        <p ng-bind-html="spaceSloth.content"></p>
+		<img class="img-responsive" ng-src="{{spaceSloth.src}}" alt="{{spaceSloth.title}}"/><br></br>		
     </article>
 
 </div>
