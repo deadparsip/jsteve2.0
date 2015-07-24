@@ -4,14 +4,13 @@
     var vagueWhelk = {};
     var app = angular.module("whelk", ["ngSanitize"]);
 
-
-    // Declare app level module which depends on views, and components
     angular.module('whelk', [
         'whelk.main',
         'whelk.poetry',
-        'whelk.pics'
+        'whelk.pics',
+        'whelk.films',
+        'whelk.spaceSloth'
     ]);
-
 
     var main = angular.module('whelk.main', ['ngSanitize']);
 
@@ -108,7 +107,7 @@
             alt: 'The Space Sloth speeketh!',
             desc: "<p>Wisdimz from the Great Space Sloth! He will blow your mind like a sex-worker therapist with a stun-enema. That is a mind properly blown. His words will almost certainly make your wig go back son!</p>" +
                   "<p class='go'>Go and heed the Space Sloth's words you radish patch and herb garden bitch --></p><br>",
-            templateUrl: 'poetry/index.html',
+            templateUrl: 'spacesloth/index.html',
             showContent: false
         },
         {

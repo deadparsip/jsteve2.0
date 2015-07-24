@@ -68,9 +68,6 @@ p.go:hover {
     width:99%; padding:1% 0 0 0; margin:0 auto; max-width:1024px;position:relative;
 }
 nav {
-	display:none;
-}
-nav {
 	width: 100%;
 	display:block;
 }
@@ -92,6 +89,7 @@ article nav li {
 }
 nav li.selected{
 	color:#fff;
+	background:#fff;
 }
 
 li.spacesloth {
@@ -105,11 +103,10 @@ li.spacesloth {
 	margin:3% 1% 1% 0;
 	padding:1% 1% 3% 1%;background:#ccc;min-height:100px;display:inline-block; 
 	text-align:center; 
-	display:none;
 }
-article:nth-child(2) {
+/**article:nth-child(2) {
   display: block;
-}
+}**/
 
 .boxes p, .boxes li { 
 	margin:0 2%;

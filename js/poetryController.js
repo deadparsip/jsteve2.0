@@ -16,8 +16,7 @@
                 'befallen my not yet cloven hoof <br>' +
                 'deliver me from wet sock before I strike out with my existence!'
             },
-
-             {
+			{
                 title: 'My face',
                 content: 'ALL OVER MY FACE<br>' +
                     '<em>like a finger</em><br>' +

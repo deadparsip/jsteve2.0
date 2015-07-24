@@ -3,7 +3,7 @@
 	<nav id="items" class="items">
         <a id="prev" href="/" class="links prev" ng-click="backPoem()"></a>			
 		<ul>
-			<li class="circle" ng-repeat="poem in poems" ng-click="changeActivePoem($index)">{{$index}}</li>
+			<li ng-class="{'selected' : (activePoem == $index)}" ng-repeat="poem in poems" ng-click="changeActivePoem($index)">{{$index}}</li>
 		</ul>			
         <a id="next" href="/" class="links next opac" style="display: inline;" ng-click="forwardPoem()"></a> 
 	</nav>

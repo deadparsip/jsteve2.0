@@ -32,11 +32,10 @@
 
         <article ng-repeat="section in sections" class="home boxes animated fadeInUpBig" ng-if="activeSection == $index">
             <section ng-if="section.showContent" ng-include="section.templateUrl"></section>
-            <section ng-if="!section.showContent">
+            <section ng-if="!section.showContent" ng-click="showContent($index,event)">
 		        <h2>{{section.name}}</h2>			                
                 <img ng-src="{{section.cover}}" class="img-responsive main" ng-alt="{{section.alt}}">
                 <section ng-bind-html="section.desc"></section>
-		        <a ng-click="showContent($index,event)">show</a>
             </section>
         </article>
 		
@@ -47,12 +46,13 @@
 <div id="fb-root"></div>
 <script src="js/angular.min.js"></script>
 <script src="js/angular-sanitize.min.js"></script>
+<!-- concat -->
 <script src="js/Controller.js"></script>    
 <script src="js/poetryController.js"></script>    
 <script src="js/picsController.js"></script>    
+<script src="js/filmsController.js"></script>    
+<script src="js/spaceSLothController.js"></script>    
 
- <!--for live concat and minify -->   
- <!--<script src="build/script.min.js"></script>-->
 </body>
 </html>
 

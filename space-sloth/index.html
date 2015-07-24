@@ -1,0 +1,18 @@
+﻿<div id ="main" ng-controller="spaceSlothController">
+         
+	<nav id="items" class="items">
+        <a id="prev" href="/" class="links prev" ng-click="backspaceSloth()"></a>			
+		<ul>
+			<li ng-class="{'selected' : (activespaceSloth == $index)}" ng-repeat="spaceSloth in spaceSloths" ng-click="changeActivespaceSloth($index)">{{$index}}</li>
+		</ul>			
+        <a id="next" href="/" class="links next opac" style="display: inline;" ng-click="forwardspaceSloth()"></a> 
+	</nav>
+
+    <article ng-repeat="spaceSloth in spaceSloths" class="boxes animated fadeIn" ng-if="activespaceSloth == $index">
+        <h2>{{spaceSloth.title}}</h2>
+        <div ng-bind-html="spaceSloth.content"></div>
+		<img class="img-responsive" ng-src="{{spaceSloth.src}}" alt="{{spaceSloth.title}}"/><br></br>
+		<div class="fb-share-button" data-href="http://www.thevaguewhelk.com/films/index.html" data-layout="button_count"></div>
+    </article>
+
+</div>
