@@ -1,7 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Quicksand:400,700);
 body {
-    font-family: 'Quicksand', sans-serif; width:100%; margin:0; padding:0; background:#000;overflow-x:hidden;overflow-y:scroll;min-height:600px;
-    transition:background 18s; min-height:700px;
+    font-family: 'Quicksand', sans-serif; width:100%; margin:0; padding:0; background:#000;overflow-x:hidden;
+	overflow-y:scroll;
+    transition:background 18s; 
+	min-height:700px;
+	min-height:100vh;
 }
 body.whelk { background:#00a8ff}
 body.nail { background:#ff0030}
@@ -88,8 +91,7 @@ article nav li {
     width: 4%;
 }
 nav li.selected{
-	color:#fff;
-	background:#fff;
+	color:#fff;	
 }
 
 li.spacesloth {

@@ -26,7 +26,7 @@
 	<div id="main" class="cf home">
         <nav>
             <ul>
-                <li ng-repeat="nav in navs" ng-click="changeActiveSection($index,event)">{{nav.link}}</li>
+                <li ng-class="{'selected' : (activeSection == $index)}" ng-repeat="nav in navs" ng-click="changeActiveSection($index,event)" ng-if="$index!==0">{{nav.link}}</li>
             </ul>
         </nav>		
 
