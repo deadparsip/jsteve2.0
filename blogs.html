@@ -1,0 +1,12 @@
+﻿<div ng-controller="blogsController">      
+		
+    <div ng-repeat="blog in blogs" class="animated {{back}}" ng-if="activeblogs == $index" ng-swipe-right="backblog()" ng-swipe-left="forwardblog()">
+	
+	<span ng-class="{opac: activeblogs > [blogs.length-2], goTo: true}" ng-click="forwardblogs()"></span>	
+	<span ng-class="{opac: activeblogs < 1, goTo: true}" ng-click="backblogs()"></span>
+	
+		<h2 ng-bind-html="blog.title"></h2>			
+        <p ng-bind-html="blog.content" class="blogs"></p>        
+    
+	</div>
+</div>
