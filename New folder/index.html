@@ -1,0 +1,11 @@
+﻿<div id ="main" ng-controller="blepCatController">
+         
+	<nav id="itemsa" class="itemsj"></nav>
+
+    <article ng-repeat="blepCat in blepCats" class="boxes animated {{back}}" ng-if="activeblepCat == $index"  ng-swipe-right="backblepCat()" ng-swipe-left="forwardblepCat()">
+        <h2>{{blepCat.title}}</h2>
+        <p ng-bind-html="blepCat.content"></p>
+		<img class="img-responsive main" ng-src="{{blepCat.src}}" alt="{{blepCat.title}}"/><br></br>		
+    </article>
+
+</div>

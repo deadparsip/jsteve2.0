@@ -1,14 +1,8 @@
 ﻿<div id ="main" ng-controller="poetryController">
          
-	<nav id="items" class="items">
-        <a id="prev" href="/" class="links prev" ng-click="backPoem()"></a>			
-		<ul>
-			<li ng-class="{'selected' : (activePoem == $index)}" ng-repeat="poem in poems" ng-click="changeActivePoem($index)">{{$index}}</li>
-		</ul>			
-        <a id="next" href="/" class="links next opac" style="display: inline;" ng-click="forwardPoem()"></a> 
-	</nav>
+	<nav id="itemsa" class="itemsj"></nav>
 
-    <article ng-repeat="poem in poems" class="boxes animated fadeInLeft" ng-if="activePoem == $index">
+    <article ng-repeat="poem in poems" class="boxes animated {{back}}" ng-if="activePoem == $index" ng-swipe-right="backPoem()" ng-swipe-left="forwardPoem()">
         <h2>{{poem.title}}</h2>
         <div ng-bind-html="poem.content"></div>
         <br/><br/><em>fin</em>

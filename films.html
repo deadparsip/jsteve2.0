@@ -1,0 +1,15 @@
+﻿<div ng-controller="filmsController">   
+
+    <div ng-repeat="film in films" class="animated {{back}}" ng-if="activeFilm == $index" ng-swipe-right="backFilm()" ng-swipe-left="forwardFilm()">
+
+		<span ng-class="{opac: activeFilm > [films.length-2], goTo: true}" ng-click="forwardFilm()"></span>	
+		<span ng-class="{opac: activeFilm < 1, goTo: true}" ng-click="backFilm()"></span>
+		
+		<h2 ng-bind-html="film.title"></h2>
+		
+        <p ng-bind-html="film.content"></p>
+        <br/><br/>
+		<img class="img-responsive" ng-src="{{film.src}}" alt="{{film.title}}"/><br></br>
+		<div class="fb-share-button" data-href="http://www.thevaguewhelk.com/films/index.html" data-layout="button_count"></div>
+    </article>
+</div>

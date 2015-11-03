@@ -1,19 +1,11 @@
-﻿<div id ="main" ng-controller="filmsController">
-         
-	<nav id="items" class="items">
-        <a id="prev" href="/" class="links prev" ng-click="backFilm()"></a>			
-		<ul>
-			<li ng-class="{selected: activeFilm == $index}" ng-repeat="film in films" ng-click="changeActiveFilms($index)">{{$index}}</li>
-		</ul>			
-        <a id="next" href="/" class="links next opac" style="display: inline;" ng-click="forwardFilm()"></a> 
-	</nav>
+﻿<div id ="main" ng-controller="filmsController">       
+	<nav id="itemss" class="sitems"></nav>
 
-    <article ng-repeat="film in films" class="boxes animated fadeInUp" ng-if="activeFilm == $index">
+    <article ng-repeat="film in films" class="boxes animated {{back}}" ng-if="activeFilm == $index" ng-swipe-right="backFilm()" ng-swipe-left="forwardFilm()">
         <h2>{{film.title}}</h2>
         <div ng-bind-html="film.content"></div>
         <br/><br/>
 		<img class="img-responsive" ng-src="{{film.src}}" alt="{{film.title}}"/><br></br>
 		<div class="fb-share-button" data-href="http://www.thevaguewhelk.com/films/index.html" data-layout="button_count"></div>
     </article>
-
 </div>

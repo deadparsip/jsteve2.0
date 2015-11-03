@@ -74,8 +74,10 @@
 	})();	
 	
     (function initThoBlud() {
-        $boxes.on("swiperight", prevItem);
-        $boxes.on("swipeleft", nextItem);
+		if (typeof window.ontouchstart !== "undefined") { //accidentally 'swiping' with mouse was starting to really get on my legs
+			$boxes.on("swiperight", prevItem);
+			$boxes.on("swipeleft", nextItem);	
+		}        
         $nav.on('click', function (event) { getItem(event); });
     })();
 

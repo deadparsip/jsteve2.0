@@ -1,0 +1,14 @@
+﻿<div ng-controller="picsController">
+			
+    <div ng-repeat="pic in pics" class="animated {{back}}" ng-if="activePic == $index"  ng-swipe-right="backPic()" ng-swipe-left="forwardPic()">			
+	
+	<span ng-class="{opac: activePic > [pics.length-2], goTo: true}" ng-click="forwardPic()"></span>	
+	<span ng-class="{opac: activePic < 1, goTo: true}" ng-click="backPic()"></span>
+	
+		<h2 ng-bind-html="pic.title"></h2>
+		
+        <p ng-bind-html="pic.content"></p>
+		<img class="img-responsive main" ng-src="{{pic.src}}" alt="{{pic.title}}"/><br></br>	      
+    </article>
+
+</div>

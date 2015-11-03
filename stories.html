@@ -1,0 +1,13 @@
+<div ng-controller="storiesController">      
+		
+    <div ng-repeat="story in stories" class="animated {{back}}" ng-if="activeStory == $index" ng-swipe-right="backStory()" ng-swipe-left="forwardStory()">
+
+	<span ng-class="{opac: activeStory > [stories.length-2], goTo: true}" ng-click="forwardStory()"></span>			
+	<span ng-class="{opac: activeStory < 1, goTo: true}" ng-click="backStory()"></span>	
+	
+		<h2 ng-bind-html="story.title"></h2>			
+        <p ng-bind-html="story.content" class="poetries"></p>
+        <br/><br/><em>fin</em>		
+    
+	</div>
+</div>

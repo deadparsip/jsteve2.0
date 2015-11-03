@@ -1,14 +1,9 @@
 ﻿<div id ="main" ng-controller="picsController">
          
-	<nav id="items" class="items">
-		<a id="prev" href="/" class="links prev"></a>			
-		<ul>
-			<li class="circle" ng-repeat="pic in pics" ng-click="changeActivePic($index)">{{$index}}</li>
-		</ul>			
-		<a id="next" href="/" class="links next opac" style="display: inline;"></a>
+	<nav id="itemss" class="itemss">
 	</nav>
 
-    <article ng-repeat="pic in pics" class="boxes animated fadeIn" ng-if="activePic == $index">
+    <article ng-repeat="pic in pics" class="boxes animated {{back}}" ng-if="activePic == $index"  ng-swipe-right="backPic()" ng-swipe-left="forwardPic()">
         <h2>{{pic.title}}</h2>
         <div ng-bind-html="pic.desc"></div>        
     </article>

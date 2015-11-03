@@ -1,10 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Quicksand:400,700);
 body {
-    font-family: 'Quicksand', sans-serif; width:100%; margin:0; padding:0; background:#000;overflow-x:hidden;
-	overflow-y:scroll;
-    transition:background 18s; 
-	min-height:700px;
-	min-height:100vh;
+    font-family: 'Quicksand', sans-serif; width:100%; margin:0; padding:0; background:#000;overflow-x:hidden;overflow-y:scroll;min-height:600px;
+    transition:background 18s; min-height:700px; -webkit-tap-highlight-color: transparent;
 }
 body.whelk { background:#00a8ff}
 body.nail { background:#ff0030}
@@ -17,15 +14,18 @@ h1, h1 a {
 #vague h1 a {
     font-size:39px; font-size:9vw;  font-weight:400; color:#fff; text-align:right;margin:1% 2% 0;
 }
+::selection {
+  background: transparent; /* WebKit/Blink Browsers */
+}
 
 h2,h3 {
-    font-size:30px; font-weight:400; margin: 1% 0 15px;
+    font-size:30px; font-weight:400; margin: 20px 0 20px;
 }
 h2.big {
 	display:none;
 }
 h3 {
-	text-align:left;font-size:26px;margin: 3% 2% 16px
+	text-align:left;font-size:26px;margin: 30px 2% 20px
 }
 a {
     color:#000; text-decoration:none;
@@ -38,18 +38,40 @@ a#home {
 }.links {
     -webkit-transition: all .6s ease-out; transition: all .6s ease-out;
 }
-a.link,p.go {
+a.link,p.go { 
 	color:#2b00e3;
 }
 #next {float:right; top:-24px;position:relative; margin-right:1%; display:none;}
 #prev {float:left; top:-20px; position:relative; margin-left:1%;display:none;}
+
 .opac {
-    opacity:0.4;
+    opacity:0.3;
 }
+
+.goTo {
+	font-size:0.7em; cursor:pointer;float:left; margin:0; 
+	left:-1%;
+	position:relative;
+	float:left;
+	width:0;
+	height:0;
+	display:block;
+	margin-top: -2%;
+	border: 10px solid transparent; border-right:15px solid #666;	
+}
+
+.goTo:nth-child(1)  {
+	right:-1%;
+    left: auto;
+	border: 10px solid transparent; border-left:15px solid #666;
+	float:right;
+}
+
 
 .helper {
         -moz-transition: 6s ease-out; -webkit-transition: 6s ease-out; transition: all 6s; color:#fff;
 }
+
 .helper.fadeout {
 	opacity:0;
 }
@@ -61,7 +83,9 @@ p.go {
 p.go:hover { 
 	opacity:1;
 }
-
+	.boxes .poetries {
+		text-align:center;
+	}
 /*Elements*/
 #wrapper {
     width:96%; padding:0; margin:5% 2% 0; text-align:center; 
@@ -71,48 +95,99 @@ p.go:hover {
     width:99%; padding:1% 0 0 0; margin:0 auto; max-width:1024px;position:relative;
 }
 nav {
+	display:none;
+}
+nav {
 	width: 100%;
 	display:block;
 }
 nav ul {
 	margin:0;
 	padding-left:0;
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 nav li {
 	color: rgba(204, 204, 204,0.8);
 	display: inline-block;
-	width: 23%;
+	width: 33%;
 	cursor:pointer;	
-	transition:all 1s;
+	transition:all 0.4s;
 	color: rgba(204, 204, 204,0.8);
-	margin: 2% 0;
-}
-article nav li {
-    width: 4%;
-}
-nav li.selected{
-	color:#fff;	
+	padding: 2% 0;
+	min-width:70px;
 }
 
-li.spacesloth {
-  width: 35%;
+nav li.selected{
+	color:#fff;
+}
+
+li.spacesloth, li.memekitten {
+  flex-grow: 2;
+  width:15%;
 }
 #main article nav li {
 	color:#666;
 }
+#main article nav ul {
+    margin: -2% -2% 0 -2%;
+}
+#main article nav li {
+    color: #666;
+    background-color: #eee;
+    margin: 0;
+    TEXT-ALIGN: CENTER;
+    OUTLINE: 1PX SOLID #666;
+}
+.items {
+	width:100%;
+	height:50px;
+	overflow:hidden;
+	padding:0;
+	margin:0;
+	position:relative;	
+}
+.items ul {
+	width:2000px;
+	display:block;
+	padding:0;
+	margin:0;	
+	position:absolute;
+	top:0;
+	transition: all 0.3s;	
+}
+.items li {
+    margin: 0;
+    cursor: pointer;
+    transition: all 0s;
+    width: 120px;
+	float:left;
+    padding: 13px 10px 15px;
+	list-style-type:none;
+	word-wrap:break-word;
+	line-height:2em;
+	height:30px;
+}
+
 .boxes {
     width:98%; 
 	margin:3% 1% 1% 0;
 	padding:1% 1% 3% 1%;background:#ccc;min-height:100px;display:inline-block; 
 	text-align:center; 
+	display:none;
 }
-/**article:nth-child(2) {
+
+article:nth-child(2) {
   display: block;
-}**/
+}
 
 .boxes p, .boxes li { 
 	margin:0 2%;
-	text-align:left
+	text-align:left;
+	font-size: 22px;
+	line-height: 32px;
+	
 }
 .boxes p {
 	margin:15px 2%;
@@ -124,14 +199,11 @@ li.spacesloth {
 	text-align:center
 }    
 .boxes img, .stories .boxes p, .bio .boxes p {
-    width:96%;
-    /*maybz*/
-    width: 108%;
-    margin-left: -4%;
+    width:96%;    
 }
-.boxes img.main {
-	width: 107%;
-	margin: 0px 0px 0px -4%;
+.boxes img {
+	width: 105%;
+	margin: 0px 0px 0px -3%;
 	max-width: 980px;
 }
 .poetry .boxes a,.stories .boxes a {
@@ -141,7 +213,31 @@ li.spacesloth {
     background:#aeadad;
 }
 
+.vaguely {
+	width: 20vw;
+    position: absolute;
+    top: 0%;
+    left: 2%;
+    max-width: 200px;
+    min-width: 105px;
+    z-index: -1;
+	}
 
+.new-things img{
+	margin-bottom:30px;
+}
+
+.new-things p {
+	margin-bottom:20px;
+}
+
+
+html .fb_iframe_widget {
+    display: inline-block;
+    position: absolute;
+    right: 1%;
+	top:0;
+}
 
 #botty {
     position:fixed;bottom:-80px;width:100%;min-height:45px;margin:0 auto;
@@ -225,7 +321,8 @@ li.spacesloth {
 	
     h2 {
         font-size:37px;
-        margin:5px auto 15px;
+        margin:20px auto 35px;
+		padding:15px 20px 0;
     }    
 	h2.big {
 		color: #fff;
@@ -248,12 +345,9 @@ li.spacesloth {
 		margin-left:2%;
 	}
 	nav li {
-		display: inline-block;
-		width: 11%;
+		display: inline-block;	
 		cursor:pointer;		
-	}
-	nav li.spacesloth { 
-		width:25%;
+		width:24%;
 	}
     
 	#wrapper {
@@ -281,7 +375,7 @@ li.spacesloth {
         margin:3% auto; 
         float:none;
         min-height:10px;
-		max-width:980px;
+		max-width:1200px;
 		position:relative;
 		/*left:-2%;*/
     }
@@ -307,6 +401,11 @@ li.spacesloth {
     #botty .contact, #botty .contact a,#botty .contact.git,#botty .contact.git a {
         width:50px;height:50px;
     }   
+	.boxes img {
+		max-width: 980px;
+		width: 112%;
+		margin: 0px 0px 0px -6%;		
+	}
     
 }
 
@@ -329,7 +428,7 @@ li.spacesloth {
     }
     
     #main {
-        min-width:980px;
+        max-width:1400px;
     }
 
     #next {
@@ -339,14 +438,26 @@ li.spacesloth {
         display:block;
     }
 	
-	nav li.spacesloth { 
-		width:19%;
+	li.spacesloth, li.memekitten {
+		flex-grow: 1;
 	}
-	.boxes img.main {
-		width: 100%;
-		margin: inherit;
-		max-width: 980px;
+	
+	.boxes img {
+		max-width: 1500px;	
 	}
+	
+	nav li {
+		display: inline-block;	
+		cursor:pointer;		
+		width:12%;
+	}	
+	
+	
+	.boxes div p {
+		font-size: 20px;
+		line-height: 32px;
+	}
+
 }
 
 

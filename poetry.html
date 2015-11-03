@@ -1,0 +1,13 @@
+﻿<div ng-controller="poetryController">      
+		
+    <div ng-repeat="poem in poems" class="animated {{back}}" ng-if="activePoem == $index" ng-swipe-right="backPoem()" ng-swipe-left="forwardPoem()">
+	
+	<span ng-class="{opac: activePoem > [poems.length-2], goTo: true}" ng-click="forwardPoem()"></span>	
+	<span ng-class="{opac: activePoem < 1, goTo: true}" ng-click="backPoem()"></span>
+	
+		<h2 ng-bind-html="poem.title"></h2>			
+        <p ng-bind-html="poem.content" class="poetries"></p>
+        <br/><br/><em>fin</em>		
+    
+	</div>
+</div>

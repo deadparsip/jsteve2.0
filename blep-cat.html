@@ -1,0 +1,14 @@
+﻿<div ng-controller="blepCatController">
+		
+    <div ng-repeat="blepCat in blepCats" class="animated {{back}}" ng-if="activeblepCat == $index"  ng-swipe-right="backblepCat()" ng-swipe-left="forwardblepCat()">      
+         
+		<span  ng-class="{opac: activeblepCat > [blepCats.length-2], goTo: true}" ng-click="forwardblepCat()"></span>	
+		<span ng-class="{opac: activeblepCat < 1, goTo: true}" ng-click="backblepCat()"></span>
+	
+		<h2 ng-bind-html="blepCat.title"></h2>	
+		
+        <p ng-bind-html="blepCat.content"></p>
+		<img class="img-responsive main" ng-src="{{blepCat.src}}" alt="{{blepCat.title}}"/><br></br>		
+    </article>
+
+</div>

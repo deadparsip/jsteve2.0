@@ -1,0 +1,16 @@
+﻿<div ng-controller="spaceSlothController">      
+
+    <article ng-repeat="spaceSloth in spaceSloths" class="animated {{back}}" ng-if="activespaceSloth == $index"  ng-swipe-right="backspaceSloth()" ng-swipe-left="forwardspaceSloth()">
+	
+	<span ng-class="{opac: activespaceSloth > [spaceSloths.length-2], goTo: true}" ng-click="forwardspaceSloth()"></span>	
+	<span ng-class="{opac: activespaceSloth < 1, goTo: true}" ng-click="backspaceSloth()"></span>
+		
+		<h2 ng-bind-html="spaceSloth.title"></h2>		
+        
+		<p ng-bind-html="spaceSloth.content"></p>
+		
+		<img class="img-responsive main" ng-src="{{spaceSloth.src}}" alt="{{spaceSloth.title}}"/><br></br>		
+		
+    </article>
+
+</div>
