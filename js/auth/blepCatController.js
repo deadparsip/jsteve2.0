@@ -10,11 +10,11 @@
 		$scope.back = "fadeInLeft";
         $scope.blepCats = [
 			{
-                title: 'Everything is usually great. Space Blep wisdom',
-                content : 'blepping in space' +				
-				src: '/img/blepSpaceCat' + $scope.isMobile + 'space-blep-dont-think-more-than-seven.jpg',
-				alt: 'the Space Sloth knows your pain but try to remember it doesn\'t exist'				
-            }, 
+                title: 'People watch Vince Vaughn movies',
+                content : 'It is true. </p><em>Voluntarily</em>. All the while you bravely chose to attempt to decode existence. I salute you you beautiful clever tin of bitch.',
+				src: 'img/blepSpaceCat' + $scope.isMobile + 'space-blep-dont-think-more-than-seven.jpg',
+				alt: 'Blep Cat does not like Vaughn movies - he is a bitch'
+            },   
 			{
                 title: 'Never stop being yourself?',
                 content : 'Today\'s truthMissile is targeting your silent shouting space and it\'s a corker!'+
@@ -22,7 +22,8 @@
 				'Consciousness is a deceit propagated by those who would have you buy their overpriced mattresses. ~~ Accept your place in the cosmos and lie down ~ ',
 				src: '/img/blepSpaceCat' + $scope.isMobile + 'space-blep-cat-important-things.jpg',
 				alt: 'the Space Sloth knows your pain but try to remember it doesn\'t exist'				
-            },           			
+            },           
+			
 			{
                 title: 'People watch Vince Vaughn movies',
                 content : 'It is true. </p><em>Voluntarily</em>. All the while you bravely chose to attempt to decode existence. I salute you you beautiful clever tin of bitch.',
