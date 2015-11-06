@@ -111,7 +111,7 @@ nav ul {
 nav li {
 	color: rgba(204, 204, 204,0.8);
 	display: inline-block;
-	width: 33%;
+	width: 29%;
 	cursor:pointer;	
 	transition:all 0.4s;
 	color: rgba(204, 204, 204,0.8);
@@ -123,9 +123,10 @@ nav li.selected{
 	color:#fff;
 }
 
-li.spacesloth, li.memekitten {
+li.space.sloth, li.meme.kitten {
   flex-grow: 2;
-  width:15%;
+  flex-wrap:nowrap;
+  width:32%;
 }
 #main article nav li {
 	color:#666;
@@ -235,7 +236,7 @@ article:nth-child(2) {
 html .fb_iframe_widget {
     display: inline-block;
     position: absolute;
-    right: 1%;
+    left: 1%;
 	top:0;
 }
 
@@ -313,7 +314,7 @@ html .fb_iframe_widget {
 /***************************************** tabs *****************************************/
 @media only screen and (min-width: 520px) { 
     h1,h1 a, #vague h1 a  {
-        font-size:70px; font-size:14vw; line-height:1em;
+        font-size:70px; font-size:12vw; line-height:1em;
     }
 	#vague h1 a  {
 		font-size:70px; font-size:9vw;
@@ -349,7 +350,12 @@ html .fb_iframe_widget {
 		cursor:pointer;		
 		width:24%;
 	}
-    
+	
+	li.space.sloth, li.meme.kitten {
+	  flex-grow: 2;
+	  flex-wrap:nowrap;
+	  width:inherit
+	}    
 	#wrapper {
 		margin-top:6%;
     }
@@ -438,20 +444,25 @@ html .fb_iframe_widget {
         display:block;
     }
 	
-	li.spacesloth, li.memekitten {
-		flex-grow: 1;
+	li.space.sloth, li.meme.kitten {
+		flex-grow: 0;
+		width:14%;
 	}
 	
 	.boxes img {
 		max-width: 1500px;	
 	}
 	
+	.boxes .meme img {
+		max-width: 95%;
+		margin:auto;
+	}
+	
 	nav li {
 		display: inline-block;	
 		cursor:pointer;		
-		width:12%;
+		width:10%;
 	}	
-	
 	
 	.boxes div p {
 		font-size: 20px;

@@ -91,7 +91,12 @@ d.target.blur&&d.target.blur())}}}function l(d){d=d.touches&&d.touches.length?d.
 		$scope.isMobile = (window.innerWidth < 500) ? '/mobile/' : '/';
 		$scope.back = "fadeInLeft";
         $scope.blepCats = [
-
+			{
+                title: 'Everything is usually great. Space Blep wisdom',
+                content : 'blepping in space' +				
+				src: '/img/blepSpaceCat' + $scope.isMobile + 'space-blep-dont-think-more-than-seven.jpg',
+				alt: 'the Space Sloth knows your pain but try to remember it doesn\'t exist'				
+            }, 
 			{
                 title: 'Never stop being yourself?',
                 content : 'Today\'s truthMissile is targeting your silent shouting space and it\'s a corker!'+
@@ -99,7 +104,7 @@ d.target.blur&&d.target.blur())}}}function l(d){d=d.touches&&d.touches.length?d.
 				'Consciousness is a deceit propagated by those who would have you buy their overpriced mattresses. ~~ Accept your place in the cosmos and lie down ~ ',
 				src: '/img/blepSpaceCat' + $scope.isMobile + 'space-blep-cat-important-things.jpg',
 				alt: 'the Space Sloth knows your pain but try to remember it doesn\'t exist'				
-            },            
+            },           			
 			{
                 title: 'People watch Vince Vaughn movies',
                 content : 'It is true. </p><em>Voluntarily</em>. All the while you bravely chose to attempt to decode existence. I salute you you beautiful clever tin of bitch.',
@@ -310,9 +315,15 @@ d.target.blur&&d.target.blur())}}}function l(d){d=d.touches&&d.touches.length?d.
             "<p>-- this is where my mind shouts fall outs -- </p><p>FEEL FREE TO HAVE A LOOK ABOUT you coagulated glove-toaster. Sometimes things " +
             "here aren't that rubbish. </p><h3>New Things ---></h3><br><p>" +
 			
-			"<p>Today we say Goodbye to Brendan, he was a good sort, always up for a laugh, and an expert in statistinguics. Some Interesting facts about Brendan: <br> ~He has the strongest hair in the premier league <br> ~Growing up, he was the shortest man in Northern Ireland, so he moved to Leicester <br> ~He really likes possession, at home all his things are labelled 'BRENDANS' with sticky labels <br> ~ He once fell on top of his nose after listening to 'That's my leg!' by Phil Collins <br> ~ his lips are made from bark, nobody knows why <br><br> Here is a painting of Brendan to help you along x </p><img src='/img/doodles/brendan-rogers.png' alt='The Brendan Rogers is no more'/><br><br>" +
 			
-			"<p>Whenever life gets too much... take a break, go easy on yourself. ALWAYS REMEMBER JUST ONE THING</p><img src='/img/blepSpaceCat" +$scope.isMobile + "blep-space-cat-toomuch.jpg' alt='The Blep Space Cat would like to offer you some of the console'/><br><br>" +
+			"<p>Everything is usually great. Space Blep wisdom'/><br><br><img src='/img/blepSpaceCat"+$scope.isMobile +"space-blep-dont-think-more-than-seven.jpg' alt='Space Blep - dont think more than seven'/><br><br>" +
+			
+			"<p>BURRITO CATS'/><br><br><img src='/img/blepSpaceCat/burritoCat.jpg' alt='Burrito cat'/><br><br>" +
+			
+			
+			/*"<p>Today we say Goodbye to Brendan, he was a good sort, always up for a laugh, and an expert in statistinguics. Some Interesting facts about Brendan: <br> ~He has the strongest hair in the premier league <br> ~Growing up, he was the shortest man in Northern Ireland, so he moved to Leicester <br> ~He really likes possession, at home all his things are labelled 'BRENDANS' with sticky labels <br> ~ He once fell on top of his nose after listening to 'That's my leg!' by Phil Collins <br> ~ his lips are made from bark, nobody knows why <br><br> Here is a painting of Brendan to help you along x </p><img src='/img/doodles/brendan-rogers.png' alt='The Brendan Rogers is no more'/><br><br>" +*/
+			
+			//"<p>Whenever life gets too much... take a break, go easy on yourself. ALWAYS REMEMBER JUST ONE THING</p><img src='/img/blepSpaceCat" +$scope.isMobile + "blep-space-cat-toomuch.jpg' alt='The Blep Space Cat would like to offer you some of the console'/><br><br>" +
 			
 			"<p>REMEMBER you do not know anything - but neither does anybody else!</p><img src='/img/spacesloth/space-sloth-knowledge.jpg' alt='The Space Sloth on knowledge'/><br><br>" +			
 			
@@ -429,7 +440,7 @@ d.target.blur&&d.target.blur())}}}function l(d){d=d.touches&&d.touches.length?d.
 				$scope.sections[index].showContent = !$scope.sections[index].showContent;
 			}
 
-			}			
+		}			
 		
     }]);
    

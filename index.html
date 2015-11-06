@@ -21,13 +21,13 @@
 <body class="home" ng-app="whelk" ng-controller="MainController">
 <div class="fb-like" data-href="http://www.thevaguewhelk.com/" data-width="300" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
 
-<h1><a href="http://jsteve.uk/#home">biscuit</a></h1>
+<h1><a href="http://jsteve.uk/#home">vaguely whelk</a></h1>
 
 <div id="wrapper">
 	<div id="main" class="cf home">
         <nav>
             <ul>
-                <li ng-class="{'selected' : (activeSection == $index)}" ng-repeat="nav in navs" ng-click="changeActiveSection($index,event)" ng-if="$index!==0">{{nav.link}}</li>
+                <li ng-class="{'selected' : (activeSection == $index)}" class="{{nav.link}}" ng-repeat="nav in navs" ng-click="changeActiveSection($index,event)" ng-if="$index!==0">{{nav.link}}</li>
             </ul>
         </nav>		
 
@@ -45,23 +45,11 @@
 	</div>
 </div>
 
-
 <div id="fb-root"></div>
 
-<script src="js/angular.min.js"></script>
-<script src="js/angular-sanitize.min.js"></script>
-<script src="js/angular-touch.min.js"></script>
-<script src="js/angular-animate.min.js"></script>
-
-<!-- concat -->
-<script src="js/Controller.js"></script>    
-<script src="js/poetryController.js"></script>    
-<script src="js/picsController.js"></script>    
-<script src="js/filmsController.js"></script>    
-<script src="js/spaceSlothController.js"></script>
-<script src="js/blepCatController.js"></script>
-<script src="js/storiesController.js"></script>
-<script src="js/memekittenController.js"></script>
+<script src="js/lib/angular.min.js"></script>
+<script src="js/lib/es6.js"></script>
+<script src="dist/scripts/main.min.js"></script>
 
 </body>
 </html>

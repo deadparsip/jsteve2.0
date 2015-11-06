@@ -1,6 +1,6 @@
 ﻿<div ng-controller="memeKittenController">
 		
-    <div ng-repeat="memekitten in memeKittens" class="animated {{back}}" ng-if="activememeKitten == $index"  ng-swipe-right="backmemekitten()" ng-swipe-left="forwardmemekittens()">      
+    <div ng-repeat="memekitten in memeKittens" class="animated {{back}} meme" ng-if="activememeKitten == $index"  ng-swipe-right="backmemekitten()" ng-swipe-left="forwardmemekittens()">      
 
 		<span  ng-class="{opac: activememeKitten > [memeKittens.length-2], goTo: true}" ng-click="forwardmemekittens()"></span>	
 		<span ng-class="{opac: activememeKitten < 1, goTo: true}" ng-click="backmemekitten()"></span>
